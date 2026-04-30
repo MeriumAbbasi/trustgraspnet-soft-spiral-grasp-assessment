@@ -1,0 +1,39 @@
+{
+  "imu_preset": "custom",
+  "imu_indices": [
+    15,
+    17,
+    13,
+    2,
+    8,
+    20,
+    11,
+    4
+  ],
+  "actuator_preset": "disp_only",
+  "actuator_columns": [
+    "ctrl_1",
+    "ctrl_2"
+  ],
+  "act_dim": 2,
+  "family_label_mode": "exact7",
+  "family_labels": [
+    "sphere",
+    "cylinder",
+    "capsule",
+    "box",
+    "flat",
+    "branched",
+    "irregular"
+  ],
+  "num_families": 7,
+  "family_class_weights": [
+    1.070967741935484,
+    1.0,
+    1.556998556998557,
+    1.1630288331985987,
+    1.1798797156916347,
+    1.2605140186915889,
+    1.6441904761904762
+  ]
+}

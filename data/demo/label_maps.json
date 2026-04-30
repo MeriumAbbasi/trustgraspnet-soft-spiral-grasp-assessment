@@ -1,0 +1,59 @@
+{
+  "action_to_id": {
+    "continue": 0,
+    "tighten": 1,
+    "abort": 2,
+    "retry": 3
+  },
+  "phase_to_id": {
+    "pack": 0,
+    "unpack": 1,
+    "reach": 2,
+    "wrap": 3,
+    "tighten": 4,
+    "pull": 5,
+    "done": 6
+  },
+  "imu_indices": [
+    15,
+    17,
+    13,
+    2,
+    8,
+    20,
+    11,
+    4
+  ],
+  "actuator_columns": [
+    "ctrl_1",
+    "ctrl_2"
+  ],
+  "family_label_mode": "exact7",
+  "family_labels": [
+    "sphere",
+    "cylinder",
+    "capsule",
+    "box",
+    "flat",
+    "branched",
+    "irregular"
+  ],
+  "family_to_id": {
+    "sphere": 0,
+    "cylinder": 1,
+    "capsule": 2,
+    "box": 3,
+    "flat": 4,
+    "branched": 5,
+    "irregular": 6
+  },
+  "family_class_weights": [
+    1.070967741935484,
+    1.0,
+    1.556998556998557,
+    1.1630288331985987,
+    1.1798797156916347,
+    1.2605140186915889,
+    1.6441904761904762
+  ]
+}

@@ -1,0 +1,1 @@
+/absolute/path/to/private/spirob/xml/2Dsimreal_grasp.xml

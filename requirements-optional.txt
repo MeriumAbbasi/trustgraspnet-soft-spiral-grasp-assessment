@@ -1,0 +1,5 @@
+# Optional dependencies for full simulation / export / hardware paths
+mujoco
+onnx
+onnxruntime
+python-can

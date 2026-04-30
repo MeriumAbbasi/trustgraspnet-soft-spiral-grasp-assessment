@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Training outputs and large artefacts
+runs/
+outputs/
+artifacts/
+logs/
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.onnx
+checkpoints/*.ts
+checkpoints/*.ckpt
+
+# Large or private data
+xml/
+data/raw/
+data/processed/
+data/processed_subset/
+!data/demo/
+!data/demo/**
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

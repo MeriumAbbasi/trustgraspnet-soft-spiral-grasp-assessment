@@ -29,9 +29,16 @@ The recommended grading path is the **XML-free demo**:
 3. Run:
 
 ```bash
-python scripts/demo_inference.py   --checkpoint checkpoints/best.pt   --window data/demo/windows/window_0000000.npz   --stats data/demo/norm_stats.json   --input-config data/demo/input_config.json
+python scripts/demo_inference.py   --checkpoint checkpoints/best.pt   --window data/demo/windows/window_000123.npz   --stats data/demo/norm_stats.json   --input-config data/demo/input_config.json
 ```
 
+This runs inference on one precomputed processed window and prints predicted:
+
+grasp success
+grasp quality
+intervention action
+object family
+per-IMU trustPlace a tiny demo subset here.
 This prints model predictions in JSON form and does not require the private robot XML.
 
 ## Minimal installation
@@ -84,24 +91,6 @@ python scripts/train.py   --data-dir runs/windowed_dataset   --outdir runs/stude
 
 ```bash
 python scripts/evaluate.py   --data-dir runs/windowed_dataset   --checkpoint runs/student_baseline/best.pt   --outdir runs/eval_student
-```
-
-## How to make a lightweight GitHub demo
-
-The repo should stay small. Do **not** upload all trial data.
-
-Instead:
-
-1. build the full processed dataset locally,
-2. copy only a tiny subset into `data/demo/`,
-3. commit that tiny subset,
-4. commit one checkpoint or host it externally,
-5. give one command that produces sample predictions.
-
-Helper script:
-
-```bash
-python scripts/prepare_demo_subset.py   --source-data-dir /path/to/full/windowed_dataset   --outdir data/demo   --num-samples 8   --split test
 ```
 
 ## Repository structure

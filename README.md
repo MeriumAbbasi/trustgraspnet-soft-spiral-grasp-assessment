@@ -98,7 +98,7 @@ python scripts/evaluate.py   --data-dir runs/windowed_dataset   --checkpoint run
 ```text
 spirob/                  core package
 scripts/                 train / eval / preprocessing / demo
-checkpoints/             place trained checkpoints here
+checkpoints/             trained checkpoint
 configs/                 local private path placeholders
 data/demo/               tiny committed demo subset
 report/                  final report PDF
